@@ -1,0 +1,204 @@
+/* === GENERAL === */
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  position: relative;
+}
+h1, h2, h3, p {
+  font-weight: 200;
+}
+
+.page-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For Firefox */
+  min-height: 100%;
+}
+.page-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.heading h2 {
+  text-align: center;
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+.golden {
+  color: #B39970;
+}
+
+.lighty {
+  color: #f6f6f6;
+}
+
+/* === NAVIGATION === */
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(179, 153, 112, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 18px;
+    background-color: rgba(246, 246, 246, 1);
+    border-bottom-width: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(67, 61, 61, 0.46);
+    background-color: rgba(246, 246, 246, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(67, 61, 61, 1);
+    background-color: rgba(246, 246, 246, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(67, 61, 61, 0.43);
+    background-color: rgba(179, 153, 112, 0.1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #b39970;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #b39970;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #b39970;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #f6f6f6;
+}
+#custom-bootstrap-menu.navbar-default .navbar-collapse {
+  text-align: center; /* center links in collapsed bar */
+}
+
+/* === MAIN PAGE === */
+#main-page {
+  background-color: #f6f6f6;
+}
+.main-heading h1 {
+  font-size: 80px;
+  color: #433D3D;
+}
+.main-heading p {
+  font-size: 30px;
+  color: #433D3D;
+}
+.main-heading p span {
+  color: #B39970;
+}
+
+/* === LEARNING === */
+#learning {
+  background-color: #433D3D;
+}
+.group {
+  text-align: center;
+}
+.group i {
+  font-size: 70px;
+}
+.group h3 {
+  font-size: 70px;
+  margin: 0;
+  padding: 0 0 20px;
+}
+.group p {
+  font-size: 20px;
+  margin: 0;
+}
+.vocation p {
+  padding: 0 0 10px;
+}
+
+/* === WHERE === */
+#where {
+  background-color: #f6f6f6;
+}
+#where-icons {
+  padding-top: 15px;
+}
+.icons-inner {
+  margin-bottom: 20px;
+}
+.icons-inner a {
+  text-decoration: none;
+  color: #433D3D;
+}
+.icons-inner a:hover {
+  color: #B39970;
+}
+.icons-inner i {
+  font-size: 70px;
+}
+
+/* === MEDIA QUERIES === */
+/* SM - Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) {
+  #custom-bootstrap-menu.navbar-default {
+    padding: 30px 0;
+    border-bottom: none;
+    background: background-color: rgba(246, 246, 246, 0);
+    -webkit-transition: padding 0.3s ease-in-out;
+    -moz-transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+  }
+  #custom-bootstrap-menu.navbar-default.top-collapsed {
+    padding: 0px;
+    background-color: #f6f6f6;
+  }
+  .main-heading p {
+    font-size: 30px;
+  }
+  .heading h2 {
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+  .group i {
+    font-size: 75px;
+  }
+  .group h3 {
+    font-size: 85px;
+  }
+  .group p {
+    font-size: 26px;
+  }  
+  .code {
+    text-align: right;
+  }
+  .vocation {
+    text-align: left;
+  }
+}
+
+/* MD - Desktops, 992px and up */
+@media only screen and (min-width : 992px) {
+  .main-heading h1 {
+    font-size: 100px;
+  }
+  .main-heading p {
+    font-size: 38px;
+  }
+  .group i {
+    font-size: 100px;
+  }
+  .group h3 {
+    font-size: 95px;
+  }
+  .group p {
+    font-size: 30px;
+  }
+  .code p {
+    padding: 12px 0 0 62px;
+  }
+  .icons-inner {
+    padding-top: 30px;
+  }
+  .icons-inner i {
+    font-size: 90px;
+  }
+}
